@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html style="overflow-y: hidden;">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Authenticate with Spotify!</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+  </head>
+  <body>
+  <section class="hero is-primary is-fullheight is-bold">
+    <div class="hero-body">
+        <div class="container">
+            <h1 class="title">
+                Your Spotify Access Token:
+            </h1>
+            <h2>
+                {{spotify_token}}
+            </h2>
+            <h3>
+                <b>Enter this in your terminal when it asks for "Spotify Auth Token"</b>
+            </h3>
+            <br><br>
+            <h1 class="title">
+                Your Spotify Refresh Token:
+            </h1>
+            <h2>
+                {{spotify_rtoken}}
+            </h2>
+            <h3>
+                <b>Enter this in your terminal when it asks for "Spotify Refresh Token"</b>
+            </h3>
+            <br>
+            <br>
+            <br>
+            <h1>
+                <b>Once That's Done Sign Into Slack by Clicking This:</b>
+                <br>
+                <a href="https://slack.com/oauth/authorize?scope=users.profile:write&client_id=SLACK_CLIENT_ID"><img src="https://api.slack.com/img/sign_in_with_slack.png" /></a>
+            </h1>
+        </div>
+    </div>
+  </section>
+  </body>
+</html>
